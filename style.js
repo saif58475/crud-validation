@@ -43,8 +43,7 @@ signupbtn.addEventListener('click',function(){
 } )
 
 
- 
-//  the email validation
+//  the email validation    
 emailinput.addEventListener('keyup',function(){
     
 
@@ -90,5 +89,22 @@ form.addEventListener('keyup', function(){
     }else{
         signupbtn.setAttribute('disabled', true);
     }
+})
+
+// the sign in btn
+
+signinbtn.addEventListener('click',function(){
+   for(var i = 0 ; i<=users.length ; i++){
+     if( emailinput.value == users[i].email && passwordinput.value == users[i].password ){
+           console.log('yes');
+           window.location.replace("https://saif58475.github.io/my-cv/");
+           alert("Welcome to the new page");
+           
+     } else{
+         alert('Invalid email or password');
+         break;
+     }
+   }    
+      
 })
 
