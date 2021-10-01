@@ -99,7 +99,7 @@ signinbtn.addEventListener('click',function(){
            console.log('yes');
            window.location.replace("https://saif58475.github.io/my-cv/");
            alert("Welcome to the new page");
-           
+            e.preventDefault           
      } else{
          alert('Invalid email or password');
          break;
